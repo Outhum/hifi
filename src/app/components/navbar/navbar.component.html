@@ -1,0 +1,20 @@
+<nav class="navbar navbar-light" style="background-color:'#fff';box-shadow: 3px 3px 4px #888888">
+    <div class="navbar-brand">
+        <a class="navbar-item ml-5" href="#"><img src="assets/logo/logo.png1" width="20%" height="20%"></a>
+    </div>
+    <div >
+        <a class="navbar-brand" routerLink="login" *ngIf="!loggedIn">{{'HOME.login'|translate}}</a>
+        <a class="navbar-brand" href="#" (click)="logout($event)" *ngIf="loggedIn" >{{'HOME.logout'|translate}}</a> 
+
+        <a class="navbar-brand" routerLink="profile" *ngIf="loggedIn" >{{'HOME.profile'|translate}}</a>
+    </div>
+    <div class="navbar-brand">
+        <label for="sel1" class="col-sm-2 col-form-label">{{'HOME.language'|translate}}</label>
+        <div class="col-sm-16">
+            <select #langselect (change)="translate.use(langselect.value)" class="form-control">
+                    <option *ngFor="let lang of translate.getLangs()" value="{{ lang }}">{{ lang }}</option>
+            </select>
+        </div>
+    </div> 
+
+</nav>

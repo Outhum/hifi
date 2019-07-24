@@ -1,0 +1,31 @@
+{
+    "HOME":{
+        "login":"Login",
+        "logout":"Logout",
+        "profile":"Profile",
+        "language":"Select Language"
+
+    },
+    "LOGIN":{
+           "title":"Login Here",
+           "email":"Email",
+           "password":"Password",
+           "signin" : "Sign in",
+           "signup" :"Sign Up",
+           "resetpwd":"Reset Password?"
+    },
+    "SIGNUP":{
+        "title":"Register Here",
+        "name":"Name",
+        "email":"Email",
+        "password":"Password",
+        "signin" : "Sign In",
+        "confirmpwd":"Confirm Password",
+        "signup" :"Sign Up"
+    },
+    "RESETPASSWORD":{
+        "title":"Password Reset",
+        "email":"Email",
+        "sendemail":"Send Email to Reset Password"
+    }
+}
